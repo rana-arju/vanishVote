@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { PlusCircle } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <span className="font-bold text-xl">
-            Vanish <span className="text-green-400">Vote</span>
+            Vanish <span className="text-primary">Vote</span>
           </span>
         </Link>
         <div className="flex items-center space-x-4">
@@ -17,11 +18,12 @@ export default function Header() {
             href="/"
             className="btn btn-primary btn-sm inline-flex items-center"
           >
-            <button className="bg-green-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-green-600 transition cursor-pointer flex justify-center items-center">
+            <button className="bg-primary  text-white px-5 py-2 rounded-lg shadow-md hover:bg-primary/90 transition cursor-pointer flex justify-center items-center">
               <PlusCircle className="mr-2 h-4 w-4" />
               Create Poll
             </button>
           </Link>
+          <ModeToggle />
         </div>
       </div>
     </header>
