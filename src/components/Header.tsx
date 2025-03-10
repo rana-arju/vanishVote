@@ -15,7 +15,7 @@ export default function Header() {
         </Link>
         <div className="flex items-center space-x-4">
           <Link
-            href="/"
+            href="/create-poll"
             className="btn btn-primary btn-sm inline-flex items-center"
           >
             <button className="bg-primary  text-white px-5 py-2 rounded-lg shadow-md hover:bg-primary/90 transition cursor-pointer flex justify-center items-center">
